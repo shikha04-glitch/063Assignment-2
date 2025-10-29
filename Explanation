@@ -1,0 +1,52 @@
+# 📚 Library Book Management System (C++)
+
+## 🧩 Introduction
+A **C++ console-based Library Management System** that uses:
+- **Singly Linked List** → to store and manage books  
+- **Stack (LIFO)** → to track and undo transactions  
+
+The system allows insertion, deletion, issuing, returning, viewing, and undoing actions for books.
+
+---
+
+## ⚙️ Data Structures Used
+| Structure | Purpose |
+|------------|----------|
+| **Linked List** | Stores dynamic list of books |
+| **Stack** | Stores transaction history for undo feature |
+| **Struct (Book)** | Represents individual book record |
+| **Struct (Transaction)** | Represents a single issue/return action |
+
+---
+
+## 📦 Core Functionalities
+1. **Insert Book** – Add a new book with unique ID  
+2. **Delete Book** – Remove a book by ID  
+3. **Issue Book** – Mark a book as *Issued*  
+4. **Return Book** – Mark a book as *Available*  
+5. **Undo Last Transaction** – Revert last issue/return  
+6. **View Transactions** – Show transaction history  
+7. **Display All Books** – List all books and status  
+8. **Exit** – Quit the program  
+
+---
+
+## ⏱️ Time & Space Complexity
+| Operation | Time | Space |
+|------------|------|-------|
+| Insert / Delete / Search | O(n) | O(n) |
+| Issue / Return | O(n) | O(n) |
+| Undo Transaction | O(1) | O(m) |
+| Display | O(n) | O(1) |
+
+---
+
+## 🧠 Error Handling
+- Prevents **duplicate Book IDs**  
+- Validates **positive Book IDs**  
+- Handles **empty stack** in undo  
+- Shows clear messages for invalid actions  
+
+---
+
+
